@@ -1,0 +1,450 @@
+/* AddPlayer.css */
+
+.parent-container {
+    /* Add styles for the parent container */
+    position: relative;
+    margin-top: 40px;
+    
+  }
+  
+  .card {
+    position: relative;
+    /* width: 190px;
+    height: 254px; */
+    background: #94A684;
+    border-radius: 8px;
+    color: #232323;
+    padding: 16px;
+    border: 1px solid #232323;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+
+  }
+  
+  .card:hover {
+    transform: translate(15px, -15px);
+    border-color: #5bc0eb;
+  }
+  
+  .card:hover .card-hidden {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card-hidden {
+    display: flex;
+    transform: translateY(200%);
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform .5s ease-in, opacity .3s ease-in;
+    opacity: 0;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Rest of your CSS styles */
+  
+
+
+  /* top margin */
+
+
+/* 
+  .home-container {
+    background-image: url('bg24.jpg');
+    background-size:fill;
+    background-position: center;
+    background-attachment: fixed; 
+  } */
+
+
+
+
+
+
+
+  /* Add this CSS to your existing styles */
+
+.nav__cont {
+  position: fixed;
+  width: 60px;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+  background-color: #202020;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  cursor: pointer;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+  &:hover {
+    width: 200px;
+  }
+  @media screen and (min-width: 600px) {
+    width: 80px;
+  }
+}
+
+.nav {
+  list-style-type: none;
+  color: white;
+  &:first-child {
+    padding-top: 1.5rem;
+  }
+}
+
+.nav__items {
+  padding-bottom: 4rem;
+  font-family: 'roboto';
+  a {
+    position: relative;
+    display: block;
+    top: -35px;
+    padding-left: 25px;
+    padding-right: 15px;
+    transition: all 0.3s ease;
+    margin-left: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'roboto';
+    font-weight: 100;
+    font-size: 1.35em;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 2px;
+      background: radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%);
+      opacity: 0;
+      transition: all 0.5s ease;
+      z-index: -10;
+    }
+  }
+  &:hover a:after {
+    opacity: 1;
+  }
+  svg {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    left: -25px;
+    cursor: pointer;
+    @media screen and (min-width: 600px) {
+      width: 32px;
+      height: 32px;
+      left: -15px;
+    }
+  }
+}
+
+
+
+h1 {
+  margin-top: 6rem;
+  margin-left: 80px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 6px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+/* card */
+
+#team1{
+  background-color: #5F6F52;
+}
+
+
+
+/* bg img */
+
+/* .bgi {
+  background-image: url('Bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  
+} */
+
+
+
+
+body {
+  height: 100vh;
+  /* background-color: #FEFAE0; */
+  /* background: radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%),
+    radial-gradient(circle at 25.99% 27.79%, #ff94fb, transparent 100%),
+    radial-gradient(circle at 50% 50%, #000000, #000000 100%); */
+/* 
+    background: linear-gradient(to right, #ff5f6d, #ffc371); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('bg24.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* padding-left: 15vh; */
+  }
+
+
+
+
+
+
+
+
+
+/* footer
+.footer {
+  background-color: #040D12;
+  color: hsl(0, 10%, 96%);
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+.f1{
+  width: 100%;
+} */
+
+
+/* Footer */
+/* styles.css */
+
+/* footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+ */
+
+
+
+ a {
+  color: inherit;
+}
+.item1 {
+  border: none;
+  background-color: inherit;
+  color: #6bd1f0;
+  padding-left: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.item1:hover {
+  text-decoration: none;
+  color: #48976a;
+}
+.item1:focus {
+  outline: 0;
+}
+.item2 {
+  background: rgba(49, 49, 54, 0.993);
+  color: rgb(190, 190, 190);
+  margin: 1px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item3 {
+  font-size: 20px;
+  background: #292a30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item3:hover {
+  background-color: #000000;
+  transition: 0.4s;
+}
+.item4 {
+  font-size: 20px;
+  background: #25252b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item4:hover {
+  background-color: #4267b2;
+  transition: 0.4s;
+}
+.item5 {
+  font-size: 20px;
+  background: #202025;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item5:hover {
+  background-color: #da0e0e;
+  transition: 0.4s;
+}
+
+.footer-container {
+  color: aliceblue;
+  text-align: center;
+  background-color: rgba(49, 49, 54, 0.993);
+  font-size: 15px;
+  width: 100%;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr 1fr 1fr;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .item1 {
+      font-size: 12px;
+      padding-left: 3px;
+  }
+  .item2 {
+      font-size: 7px;
+  }
+  .item3,
+  .item4,
+  .item5 {
+      font-size: 12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .item1 {
+      font-size: 14px;
+      padding-left: 5px;
+  }
+  .item2 {
+      font-size: 9px;
+  }
+  .item3,
+  .item4,
+  .item5 {
+      font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .item1 {
+      font-size: 16px;
+      padding-left: 6px;
+  }
+  .item2 {
+      font-size: 11px;
+  }
+  .item3,
+  .item4,
+  .item5 {
+      font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .item1 {
+      font-size: 18px;
+      padding-left: 8px;
+  }
+  .item2 {
+      font-size: 13px;
+  }
+  .item3,
+  .item4,
+  .item5 {
+      font-size: 18px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .item1 {
+      font-size: 20px;
+      padding-left: 10px;
+  }
+  .item2 {
+      font-size: 15px;
+  }
+  .item3,
+  .item4,
+  .item5 {
+      font-size: 20px;
+  }
+}
+
+footer{
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.text{
+  color: #F5EEC8;
+  padding-left: 15vh;
+}
+
+
+
+
+/* Other existing styles for Navbar */
+.inputs{
+  background-color: white;
+  border-radius: 8px;
+
+  color: black;
+}
+.formc {
+  background-color: #FAF8ED;
+  width: fit-content;
+  padding: 3vh;
+  margin: auto;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Add this line to center the element vertically */
+}
+
+
+.admin-buttons{
+  padding-left: 18vh;
+}
+
+
+.gridt{
+  padding-left: 15vh;
+}
+
+
+.nametag{
+
+  color: white;
+  background-color: #202020;
+  padding-left: 15vh;
+}
